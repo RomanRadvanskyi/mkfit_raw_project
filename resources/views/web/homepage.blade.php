@@ -4,4 +4,5 @@
 @include('web.component.services')
 @include('web.component.opening-hours')
 @include('web.component.price-list')
-@include('web.component.footer')
+@include('web.component.socialmedia')
+@include('web.component.footer-white')

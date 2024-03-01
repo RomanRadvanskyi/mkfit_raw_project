@@ -62,7 +62,7 @@
             openingHoursMessageElement.style.color = "#8add8a";
         } else {
             statusDotElement.style.backgroundColor = "#C32A2A";
-            openingHoursMessageElement.textContent = "Momentálne máme zatvorené.";
+            openingHoursMessageElement.textContent = "Momentálne máme zatvorené";
             openingHoursMessageElement.style.color = "#C32A2A";
         }
     </script>

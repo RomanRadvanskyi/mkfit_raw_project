@@ -17,37 +17,16 @@
 
             @if (Route::has('login'))
                 @auth
-
-                    <div class="dropdown">
-
-                        <button class="dropbtn">
-                            <x-nav-link :href="auth()->check() && auth()->user()->isAdmin() ? route('admin.adminhome') : route('dashboard')" :active="request()->routeIs('dashboard')">
-                                {{ Auth::user()->name }}
-                            </x-nav-link>
-                        </button>
-                        <div class="dropdown-content">
-                            <x-dropdown-link :href="route('profile.edit')">
-                                {{ __('Profile') }}
-                            </x-dropdown-link>
-                            <form method="POST" action="{{ route('logout') }}">
-                                @csrf
-
-                                <x-dropdown-link :href="route('logout')"
-                                                 onclick="event.preventDefault();
-                                                this.closest('form').submit();">
-                                    {{ __('Log Out') }}
-                                </x-dropdown-link>
-                            </form>
-                        </div>
-                    </div>
-
+                    <li class="nav-item">
+                        <a href="@if(auth()->check() && auth()->user()->isAdmin()) {{ route('admin.adminhome') }} @else {{ route('dashboard') }} @endif" class="nav-link" style="color: #8add8a">{{ Auth::user()->name }}</a>
+                    </li>
                 @else
                     <li class="nav-item">
-                        <a href="{{route('login')}}" class="nav-link">Login</a>
+                        <a href="{{route('login')}}" class="nav-link" style="color: #C32A2A">Prihlásiť sa</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="{{route('register')}}" class="nav-link">Register</a>
+                        <a href="{{route('register')}}" class="nav-link" style="color: #C32A2A">Zaregistrovať sa</a>
                     </li>
                 @endauth
 

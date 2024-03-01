@@ -1,13 +1,12 @@
-
-<footer>
+<footer class="footer-white">
     <div class="container">
         <div class="footer_content">
             <div class="first_section">
                 <h3 class="footer_heading">O nás</h3>
-                <img src="{{asset('resources/img/logo/logo_white.png')}}" alt="MKFIT_logo">
+                <img src="{{asset('resources/img/logo/logo.png')}}" alt="MKFIT_logo">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, assumenda autem cupiditate delectus deleniti eaque earum et explicabo fugiat itaque omnis placeat praesentium quas reiciendis saepe, tempore voluptate. Modi, obcaecati.
                 </p>
-                <div class="social_icons">
+                <div class="social_icons-white">
                     <a href="https://www.instagram.com/mk_fit_marcel/"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.facebook.com/profile.php?id=100057226549301"><i class="fa-brands fa-facebook"></i></a>
                 </div>
@@ -21,12 +20,13 @@
                     <li><a href="#">Kontakt</a></li>
                     @if (Route::has('login'))
                         @auth
-                            <li><a href="@if(auth()->check() && auth()->user()->isAdmin()) {{ route('admin.adminhome') }} @else {{ route('dashboard') }} @endif">Môj účet</a></li>
+                            <li><a href="@if(auth()->check() && auth()->user()->isAdmin()) {{ route('admin.adminhome') }} @else {{ route('dashboard') }} @endif">Môj účet ({{ Auth::user()->name }})</a></li>
                         @else
                             <li><a href="{{route('login')}}">Prihlásiť sa</a></li>
                             <li><a href="{{route('register')}}">Zagistrovať sa</a></li>
                         @endauth
                     @endif
+
                 </ul>
             </div>
             <div class="third_section">

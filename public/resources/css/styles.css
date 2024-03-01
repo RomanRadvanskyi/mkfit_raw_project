@@ -596,6 +596,7 @@ a {
 
 .interest-button:hover {
     transform: translateY(-5px); /* Apply the transform on hover */
+    background-color: #b42a2a;
 }
 
 @media only screen and (max-width: 568px) {
@@ -609,11 +610,85 @@ a {
 
 
 
+    /* ----- SOCIALMEDIA section ----- */
+    .socialmedia_section {
+        display: flex;
+        width: 100%;
+        background: black;
+        box-shadow: -5px 0 2px rgba(0, 0, 0, 0.5);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10rem 10vw;
+    }
+
+    .socialmedia_heading {
+        color: white;
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+
+    .socialmedia_section .bar {
+        height: 5px;
+        width: 10vw;
+        background-color: white;
+        margin: 1rem 0;
+    }
+
+
+.social-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #C32A2A;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 1.6rem;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(0);
+}
+
+.social-button i {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.social-button:hover {
+    transform: translateY(-5px);
+}
+.social-button:nth-child(1):hover {
+    background: linear-gradient( to right, #833ab4,#fd1d1d,#fcb045);
+}
+.social-button:nth-child(2):hover {
+    background: #4267B2;
+}
 
 
 
 
-    /* ----- FOOTER section ----- */
+/* 28.2.2024 https://developers.facebook.com/community/threads/374479868862324/?post_id=374479872195657 */
+/*
+    #instagram-photos-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-gap: 10px;
+    }
+
+    #instagram-photos-container img {
+        width: 100%;
+        height: auto;
+    }
+*/
+
+
+
+
+
+
+
+
+/* ----- FOOTER BLACK section ----- */
     .container {
         width: 100%;
         padding: 0 10vw;
@@ -638,7 +713,7 @@ a {
     .footer_content {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        padding: 5rem 0;
+        padding: 10rem 0;
         grid-gap: 4.5rem;
     }
 
@@ -701,6 +776,10 @@ a {
         margin: 1rem 0;
     }
 
+    .second_section ul li a:hover {
+        color: #C32A2A;
+    }
+
     .second_section ul li:first-child {
         margin-top: 0;
     }
@@ -735,7 +814,14 @@ a {
         cursor: pointer;
         border-radius: 5px;
         font-size: 1.6rem;
+        transition: all 0.5s ease-in-out;
+        transform: translateY(0);
     }
+
+.fourth_section button:hover {
+    background-color: #b42a2a;
+    transform: translateY(-5px);
+}
 
     .footer_txt {
         font-size: 1.6rem;
@@ -787,3 +873,54 @@ a {
             padding-bottom: 4rem;
         }
     }
+
+
+
+
+
+
+/* ----- FOOTER WHITE modification section ----- */
+.footer-white {
+    width: 100%;
+    position: static;
+    background: #ddd;
+    box-shadow: -5px -0 2px rgba(0, 0, 0, 0.5);
+    bottom: 0;
+}
+
+.footer-white p,h3,a {
+    color: black;
+}
+
+.social_icons-white {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2.5rem;
+}
+
+.social_icons-white i {
+    font-size: 1.6rem;
+    cursor: pointer;
+    background: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: #1c2833;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(0);
+}
+
+.social_icons-white i:hover {
+    transform: translateY(-5px);
+}
+
+@media only screen and (max-width: 1210px){
+    .social_icons-white i{
+        font-size: 1.3rem;
+        width: 45px;
+        height: 45px;
+    }
+}
