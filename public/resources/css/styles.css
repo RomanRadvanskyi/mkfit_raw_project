@@ -14,7 +14,7 @@ body {
 
 
 
-/* ----- NAVIGATION-MENU sekcia ----- */
+/* ----- NAVIGATION-MENU section ----- */
 ul {
     list-style: none;
 }
@@ -216,7 +216,7 @@ a {
 
 
 
-/* ----- UVOD sekcia ----- */
+/* ----- UVOD HOMEPAGE section ----- */
 .container_uvod {
     background-image: url('../img/photos/photo7.jpg');
     background-size: cover;
@@ -307,7 +307,7 @@ a {
 
 
 
-/* ----- SLUZBY sekcia ----- */
+/* ----- SERVICES section ----- */
 .sluzby_sekcia {
     display: flex;
     width: 100%;
@@ -430,7 +430,7 @@ a {
 
 
 
-    /* ----- HODINY sekcia ----- */
+    /* ----- OPENING HOURS section ----- */
     .hodiny_sekcia {
         display: flex;
         width: 100%;
@@ -452,8 +452,7 @@ a {
         height: 5px;
         width: 10vw;
         background-color: white;
-        margin-top: 1rem;
-        margin-bottom: 5rem;
+        margin: 1rem 0;
     }
 
     .hodiny_container {
@@ -483,47 +482,138 @@ a {
         }
     }
 
-    #opening-times {
-        margin-top: 4.5rem;
+    #opening-times_container {
+        margin-top: 4rem;
         width: 30%;
         color: white;
         font-size: 1.6rem;
     }
 
-    #opening-times table {
+    #opening-times_container table {
         width: 100%;
     }
 
-    #opening-times table, #opening-times th, #opening-times td {
+    #opening-times_container table, #opening-times_container th, #opening-times_container td {
         font-size: 1.6rem;
     }
 
-    #opening-times th, #opening-times td {
-        padding: 8px;
+    #opening-times_container th, #opening-times_container td {
+        padding: 1rem;
         text-align: left;
     }
 
-    #opening-times th {
+    #opening-times_container th {
         background-color: #f2f2f2;
     }
 
-@media only screen and (max-width: 1210px) {
-    #opening-times {
+    @media only screen and (max-width: 1210px) {
+        #opening-times_container {
+            width: 50%;
+        }
+    }
+
+    @media only screen and (max-width: 568px) {
+        #opening-times_container {
+            width: 90%;
+        }
+    }
+
+
+
+
+
+
+/* ----- PRICE LIST section ----- */
+.price-list_section {
+    display: flex;
+    width: 100%;
+    background: #f0f3f4;
+    box-shadow: -5px 0 2px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem 10vw;
+}
+
+.price-list_heading {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.price-list_container {
+    width: 100%;
+}
+
+.price-list_section p {
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+}
+
+.price-list_section .bar {
+    height: 5px;
+    width: 10vw;
+    background-color: black;
+    margin: 1rem 0;
+}
+
+.price-table {
+    width: 30%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 568px) {
+    .price-table {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.price-table td {
+    padding: 1rem;
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+.price-table td:first-child {
+    font-weight: bold; /* Bold style for the first column */
+}
+
+.interest-button {
+    display: block; /* Ensure it's a block-level element for auto margin to work */
+    width: 30%;
+    margin: 4rem auto 0 auto;
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: #C32A2A;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(0);
+}
+
+.interest-button:hover {
+    transform: translateY(-5px); /* Apply the transform on hover */
+}
+
+@media only screen and (max-width: 568px) {
+    .interest-button {
         width: 50%;
     }
 }
 
-@media only screen and (max-width: 568px) {
-    #opening-times {
-        margin-top: 4rem;
-        width: 90%;
-    }
-}
 
 
 
 
-    /* ----- FOOTER sekcia ----- */
+
+
+
+
+
+    /* ----- FOOTER section ----- */
     .container {
         width: 100%;
         padding: 0 10vw;
@@ -641,7 +731,7 @@ a {
         background: #C32A2A;
         border: none;
         color: white;
-        padding: 0.6rem 0;
+        padding: 1rem 0;
         cursor: pointer;
         border-radius: 5px;
         font-size: 1.6rem;

@@ -1,33 +1,28 @@
-<section class="sluzby_sekcia">
-    <h2 class="sluzby_heading">Služby</h2>
+<section class="price-list_section">
+    <h2 class="price-list_heading">Cenník permanentiek</h2>
     <div class="bar"></div>
-    <p>Služby, ktoré Vám ponúkame v MK FIT Kežmarok</p>
+    <p>Platný od 25.01.2024</p>
 
-    <div class="sluzby_container">
-        <a href="#" class="sluzby_item">
-            <div class="sluzba">
-                <img src="{{asset('resources/img/icons/01.png')}}" alt="Treningy_logo">
-                <p>Osobné tréningy</p>
-            </div>
-        </a>
-        <a href="#" class="sluzby_item">
-            <div class="sluzba">
-                <img src="{{asset('resources/img/icons/02.png')}}" alt="Posilnovna_logo">
-                <p>Posilňovňa</p>
-            </div>
-        </a>
-        <a href="#" class="sluzby_item">
-            <div class="sluzba">
-                <img src="{{asset('resources/img/icons/03.png')}}" alt="Poradna_logo">
-                <p>Poradňa</p>
-            </div>
-        </a>
-        <a href="#" class="sluzby_item">
-            <div class="sluzba">
-                <img src="{{asset('resources/img/icons/04.png')}}" alt="Fitzona_logo">
-                <p>Fit zóna</p>
-            </div>
-        </a>
+    <div class="price-list_container">
+        <table class="price-table">
+            <tbody>
+            <tr>
+                <td>Cena za jednorazovú(vstupovú):</td>
+                <td>8€</td>
+            </tr>
+            <tr>
+                <td>Cena za mesačnú:</td>
+                <td>40€</td>
+            </tr>
+            <!-- Add more rows for different membership types -->
+            </tbody>
+        </table>
+        @if (Route::has('login'))
+            @auth
+                <a href="@if(auth()->check() && auth()->user()->isAdmin()) {{ route('admin.adminhome') }} @else {{ route('dashboard') }} @endif" class="interest-button">Mám záujem o permanentku</a>
+            @else
+                <a href="{{route('register')}}" class="interest-button">Mám záujem o permanentku</a>
+            @endauth
+        @endif
     </div>
-
 </section>

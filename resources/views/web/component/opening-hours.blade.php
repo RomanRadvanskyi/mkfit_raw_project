@@ -6,7 +6,7 @@
         <div id="status-dot"></div>
         <p id="opening-hours-message"></p>
     </div>
-    <div id="opening-times">
+    <div id="opening-times_container">
         <table>
             <tr>
                 <td>Pondelok</td>
