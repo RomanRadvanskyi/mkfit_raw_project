@@ -4,7 +4,10 @@
             <div class="first_section">
                 <h3 class="footer_heading">O nás</h3>
                 <img src="{{asset('resources/img/logo/logo.png')}}" alt="MKFIT_logo">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, assumenda autem cupiditate delectus deleniti eaque earum et explicabo fugiat itaque omnis placeat praesentium quas reiciendis saepe, tempore voluptate. Modi, obcaecati.
+                <p>
+                    Víta Vás naše moderné fitness centrum, kde spojujeme starostlivosť o zdravie s radosťou z cvičenia.
+                    S našimi certifikovanými trénermi a super kolektívom v MK FIT vás motivujeme dosiahnuť vaše fitness ciele.
+                    Sledujte nás na sociálnych sieťach a buďte s nami v kontakte pri zdieľaní tipov, motivácie a najnovších noviniek z nášho fitnes centra.
                 </p>
                 <div class="social_icons-white">
                     <a href="https://www.instagram.com/mk_fit_marcel/"><i class="fa-brands fa-instagram"></i></a>

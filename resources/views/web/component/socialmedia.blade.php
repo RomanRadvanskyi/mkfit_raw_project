@@ -1,6 +1,9 @@
 <section class="socialmedia_section">
     <h2 class="socialmedia_heading">Sociálne siete</h2>
     <div class="bar"></div>
+    <p>
+        Sledujte nás na rôzných sociálnych sieťach
+    </p>
 
     <div class="socialmedia_container" id="instagram-photos-container">
         <!-- Instagram photos will be loaded here -->
