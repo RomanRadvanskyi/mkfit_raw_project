@@ -1,0 +1,5 @@
+@include('web.component.header')
+@include('web.component.navigation-menu')
+@include('web.component.uvod')
+@include('web.component.sluzby')
+@include('web.component.footer')
