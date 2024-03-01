@@ -2,4 +2,5 @@
 @include('web.component.navigation-menu')
 @include('web.component.uvod')
 @include('web.component.sluzby')
+@include('web.component.hodiny')
 @include('web.component.footer')
