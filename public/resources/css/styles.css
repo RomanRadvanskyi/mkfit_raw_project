@@ -904,9 +904,9 @@ a {
 .gallery_container::after {
     content: '';
     position: absolute;
-    left: -5%;
+    left: -10%;
     bottom: -2rem;
-    width: 110%;
+    width: 120%;
     height: 30rem; /* Adjust the height of the shadow as needed */
     background: linear-gradient(to top, rgba(240, 243, 244, 1), rgba(240, 243, 244, 0)); /* Adjust the shadow color and gradient as needed */
     pointer-events: none;
@@ -988,7 +988,8 @@ a {
 }
 
 /* lightbox label */
-.lb-data .lb-number {
+.lb-data .lb-number,
+.lb-data .lb-caption {
     margin-top: 2rem;
     font-size: 1.6rem !important;
 }
