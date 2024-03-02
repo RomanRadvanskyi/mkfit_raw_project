@@ -2,4 +2,6 @@
 @include('web.component.navigation-menu')
 @include('web.component.uvod.uvod-servicespage')
 @include('web.component.services-information')
+@include('web.component.socialmedia')
+@include('web.component.price-list')
 @include('web.component.footer')

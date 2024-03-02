@@ -14,7 +14,6 @@
                 <td>Cena za mesačnú:</td>
                 <td>40€</td>
             </tr>
-            <!-- Add more rows for different membership types -->
             </tbody>
         </table>
         @if (Route::has('login'))
