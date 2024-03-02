@@ -5,7 +5,7 @@
     <div class="services-information_container">
 
 
-            <div class="service">
+            <div class="service" id="1">
                 <div class="service-information_item">
                     <div class="service-information">
                         <img src="{{asset('resources/img/icons/01.png')}}" alt="Treningy_logo">
@@ -27,7 +27,7 @@
                 </div>
             </div>
 
-            <div class="service reverse">
+            <div class="service reverse" id="2">
                 <div class="service-information_item">
                     <div class="service-information">
                         <img src="{{asset('resources/img/icons/02.png')}}" alt="Posilnovna_logo">
@@ -49,7 +49,7 @@
                 </div>
             </div>
 
-            <div class="service">
+            <div class="service" id="3">
                 <div class="service-information_item">
                     <div class="service-information">
                         <img src="{{asset('resources/img/icons/03.png')}}" alt="Poradna_logo">
@@ -71,7 +71,7 @@
                 </div>
             </div>
 
-            <div class="service reverse">
+            <div class="service reverse" id="4">
                 <div class="service-information_item">
                     <div class="service-information">
                         <img src="{{asset('resources/img/icons/04.png')}}" alt="Fitzona_logo">
