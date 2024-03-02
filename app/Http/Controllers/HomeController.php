@@ -15,6 +15,18 @@ class HomeController extends BaseController
     {
         return view('web.homepage');
     }
+    public function servicespage()
+    {
+        return view('web.servicespage');
+    }
+    public function gallerypage()
+    {
+        return view('web.gallerypage');
+    }
+    public function contactpage()
+    {
+        return view('web.contactpage');
+    }
 
     public function index()
     {

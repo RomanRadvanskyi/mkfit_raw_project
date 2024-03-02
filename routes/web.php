@@ -19,7 +19,11 @@ use App\Http\Controllers\ContactController;
 |
 */
 
-Route::get('/', [HomeController::class, 'homepage']);
+Route::get('/', [HomeController::class, 'homepage'])->name('web.homepage');
+Route::get('/sluzby', [HomeController::class, 'servicespage'])->name('web.servicespage');
+Route::get('/galeria', [HomeController::class, 'gallerypage'])->name('web.gallerypage');
+Route::get('/kontakt', [HomeController::class, 'contactpage'])->name('web.contactpage');
+
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 
 Route::middleware('auth')->group(function () {

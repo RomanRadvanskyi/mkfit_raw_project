@@ -1,18 +1,18 @@
 <header class="header">
     <nav class="navbar">
-        <a href="#"><img alt="MKFIT_logo" id="nav-logo" src="{{asset('resources/img/logo/logo_white.png')}}"></a>
+        <a href="/"><img alt="MKFIT_logo" id="nav-logo" src="{{asset('resources/img/logo/logo_white.png')}}"></a>
         <ul class="nav-menu">
             <li class="nav-item">
-                <a href="#" class="nav-link">Domov</a>
+                <a href="/" class="{{ request()->routeIs('web.homepage') ? 'nav-link-active' : 'nav-link' }}">Domov</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Služby</a>
+                <a href="/sluzby" class="{{ request()->routeIs('web.servicespage') ? 'nav-link-active' : 'nav-link' }}">Služby</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Galéria</a>
+                <a href="/galeria" class="{{ request()->routeIs('web.gallerypage') ? 'nav-link-active' : 'nav-link' }}">Galéria</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Kontakt</a>
+                <a href="/kontakt" class="{{ request()->routeIs('web.contactpage') ? 'nav-link-active' : 'nav-link' }}">Kontakt</a>
             </li>
 
             @if (Route::has('login'))
