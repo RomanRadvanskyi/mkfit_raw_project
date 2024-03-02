@@ -2,4 +2,5 @@
 @include('web.component.navigation-menu')
 @include('web.component.uvod.uvod-gallerypage')
 
+@include('web.component.socialmedia')
 @include('web.component.footer-white')

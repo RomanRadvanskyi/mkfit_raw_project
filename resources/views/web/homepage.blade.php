@@ -1,7 +1,7 @@
 @include('web.component.header')
 @include('web.component.navigation-menu')
 @include('web.component.uvod.uvod-homepage')
-@include('web.component.services')
+@include('web.component.services-buttons')
 @include('web.component.opening-hours')
 @include('web.component.price-list')
 @include('web.component.socialmedia')
