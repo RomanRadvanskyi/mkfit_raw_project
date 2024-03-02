@@ -231,7 +231,7 @@ a {
 
 
 
-/* ----- UVOD SERVICESPAGE section ----- */
+/* ----- UVOD SERVICESPAGE/GALLERYPAGE/CONTACTPAGE section ----- */
 .container_uvod {
     position: relative;
     background-size: cover;
@@ -244,7 +244,8 @@ a {
     overflow: hidden;
 }
 
-.container_uvod .background-image::before {
+/* UVOD SERVICESPAGE background image */
+.container_uvod .servicespage-background-image::before {
     content: "";
     position: absolute;
     top: 0;
@@ -257,6 +258,37 @@ a {
     background-position: bottom;
     z-index: -1;
 }
+
+/* UVOD GALLERYPAGE background image */
+.container_uvod .gallerypage-background-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/photos/photo9.jpg');
+    filter: grayscale(100%);
+    background-size: cover;
+    background-position: bottom;
+    z-index: -1;
+}
+
+/* UVOD CONTACTPAGE background image */
+.container_uvod .contactpage-background-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/photos/photo1.jpg');
+    filter: grayscale(100%);
+    background-size: cover;
+    background-position: bottom;
+    z-index: -1;
+}
+
 
 .uvod1 {
     z-index: 1;
