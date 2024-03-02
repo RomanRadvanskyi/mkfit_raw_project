@@ -352,20 +352,18 @@ a {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 4.5rem;
+    grid-gap: 5rem;
 }
 
 @media only screen and (max-width: 1210px){
     .sluzby_sekcia .sluzby_container {
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 4.5rem;
     }
 }
 
 @media only screen and (max-width: 568px) {
     .sluzby_sekcia .sluzby_container {
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 4rem;
     }
 }
 
@@ -462,7 +460,7 @@ a {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 10rem 10vw;
+        padding: 10rem 10vw 9rem;
     }
 
     .hodiny_heading {
@@ -489,10 +487,10 @@ a {
     }
 
     #status-dot {
-        width: 10px;
-        height: 10px;
+        width: 1rem;
+        height: 1rem;
         border-radius: 50%;
-        margin-right: 10px;
+        margin-right: 1rem;
     }
 
     .blink {
@@ -512,21 +510,23 @@ a {
         font-size: 1.6rem;
     }
 
+    #opening-times_container table td:first-child {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
     #opening-times_container table {
         width: 100%;
     }
 
-    #opening-times_container table, #opening-times_container th, #opening-times_container td {
+    #opening-times_container table,
+    #opening-times_container td {
         font-size: 1.6rem;
     }
 
-    #opening-times_container th, #opening-times_container td {
+    #opening-times_container td {
         padding: 1rem;
         text-align: left;
-    }
-
-    #opening-times_container th {
-        background-color: #f2f2f2;
     }
 
     @media only screen and (max-width: 1210px) {
@@ -727,7 +727,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10rem 10vw; /* Adjusted padding for better responsiveness */
+    padding: 10rem 10vw 9rem;
     background: #f0f3f4;
     box-shadow: 0 -1px 20px 0 #f0f3f4;
 }
@@ -992,6 +992,155 @@ a {
 .lb-data .lb-caption {
     margin-top: 2rem;
     font-size: 1.6rem !important;
+}
+
+
+
+
+
+
+
+
+
+/* ----- CONTACT section ----- */
+.contact_section {
+    display: flex;
+    width: 100%;
+    background: #f0f3f4;
+    box-shadow: 0 -1px 20px 0 #f0f3f4;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem 10vw 9rem;
+}
+
+
+.contact-flex-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.open-status-container {
+    display: flex;
+    flex-direction: column; /* Updated to display divs one below the other */
+    width: 25%;
+    padding-right: 4rem;
+}
+
+.contact-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    color: black;
+    font-size: 1.6rem;
+}
+
+
+.contact-open-status {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-open-status p {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.contact-opening-times {
+    color: black;
+    font-size: 1.6rem;
+}
+
+.contact-opening-times table {
+    width: 100%;
+}
+
+.contact-opening-times table,
+.contact-opening-times td {
+    font-size: 1.6rem;
+}
+
+.contact-opening-times td {
+    padding: 1rem;
+    text-align: left;
+}
+
+.contact-info {
+    width: 50%;
+    text-align: left;
+    color: black;
+    align-self: flex-start;
+}
+
+.contact-info h2,
+.contact-info p {
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+.contact-info h2:first-of-type {
+    padding-top: 0;
+}
+
+.contact-info h2 {
+    text-transform: uppercase;
+}
+
+.contact-info a{
+    font-size: 1.6rem;
+    color: #C32A2A;
+}
+
+.contact-opening-times table td:first-child {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1500px){
+    .open-status-container {
+        width: 50%;
+        padding-right: 4rem;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .contact-flex-container {
+        flex-direction: column;
+    }
+    .open-status-container {
+        width: 100%;
+        padding: 0;
+    }
+    .contact-open-status {
+        margin: 0;
+        justify-content: center;
+    }
+    .contact-opening-times {
+        display: flex;
+        width: 70%;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .contact-info {
+        padding-top: 4rem;
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .contact-opening-times {
+        width: 100%;
+    }
 }
 
 
