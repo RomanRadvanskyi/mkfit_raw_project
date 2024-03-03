@@ -50,7 +50,7 @@
             <p>060 01</p>
             <h2>Zodpovedná osoba</h2>
             <p>Marcel Duda</p>
-            <p>Email: <a href="mailto:mkfit@mkfit.sk">mkfit@mkfit.sk</a></p>
+            <p>Email: <a href="mailto:marcel@mkfit.sk">marcel@mkfit.sk</a></p>
             <p>Tel.: <a href="tel:0904567109">0904 567 109</a></p>
         </div>
 
